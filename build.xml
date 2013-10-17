@@ -40,7 +40,7 @@
 	</target>
 
 	<!-- Principal... -->
-	<target name="test" depends="init, compila" description="Integracion Continua">
+	<target name="test" depends="init, checkstyle,compila" description="Integracion Continua">
 		<echo message="Integracion Continua..." />
 		<junit printsummary="on" fork="yes" haltonfailure="true">
 			<classpath refid="classpath.test" />
